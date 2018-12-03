@@ -30,16 +30,24 @@ int main()
     long int test_time2 = get_next_id();
 
     long int test_time3 = get_next_id();
-
+//client side ->send (sock,&input1[0],input.size(),0);
+// server side->
+/*
+ret =1
+*/
 ImageDB Device;
-
-Device.Put(test_time1,input1,"pular.jpg",names1);
+string location;
+string picture_name;
+/*C:\\Users\\Justin\\Desktop\\*/
+cout<<"Enter name of location in: "<<endl;
+cin>>location;
+cout<<"Enter name of picture: "<<endl;
+cin>>picture_name;
+Device.Put(test_time1,input1,location+picture_name+".jpg",names1);
 Device.Get(test_time1);
 Device.Put(test_time2,input2,"space.jpg",names2);
 Device.Put(test_time3,input3,"space2.jpg",names3);
 Device.Get(test_time1);
-//Device.Delete(test_time1);
-//Device.Get(test_time1);
 
 return 0;
 }

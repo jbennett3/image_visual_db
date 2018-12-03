@@ -22,7 +22,7 @@ void EM_storage::store_buffer(em_visual_db &persisting)
   string file_name = persisting.get_name();
   long int entry_time = persisting.determine_time();
   vector<char>temp(persisting.get_vector());
-  file_path="C:\\Users\\Justin\\Desktop\\opencv_test\\EM_Visual_DB_RENEW\\"+file_name+".txt";
+  file_path="C:\\Users\\Justin\\Desktop\\"+file_name+".txt";
   store_map[entry_time]=file_path;
   std::ofstream outFile(file_name+".txt",std::ios::binary);
     for (const auto &e :temp)
