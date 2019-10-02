@@ -1,5 +1,5 @@
 # image_visual_db
-demo_project
+Demo_project
 The image_visual_db demo project is a key value store database written in C++.
 The program creates an ImageDB object where the user will enter their datapath to their image ,and the name of the picture along with the time the put operation was called.
 Each input will be done through a Put() operation that will make send the binaries to a buffer object which stores each entry in a vector.
